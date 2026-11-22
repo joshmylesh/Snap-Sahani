@@ -28,3 +28,6 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Migration architecture
+- Keep the NutriTrack workspace in the root route and use the generated Cloud client with owner-scoped row policies; photo recognition stays behind an authenticated server route so provider credentials never reach browsers.
